@@ -103,3 +103,31 @@
 .links-comunidad li:last-child {
     border-bottom: none;
 }
+
+/* hover tarjetas reparto */
+.actor-card {
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.actor-card:hover {
+    background-color: #1e1e1e;
+    transform: translateX(6px);
+}
+
+.actor-card img {
+    transition: filter 0.3s;
+}
+
+.actor-card:hover img {
+    filter: brightness(1.1) contrast(1.05);
+}
+
+.actor-info h3 {
+    transition: color 0.2s;
+}
+
+.actor-card:hover .actor-info h3 {
+    color: #ff4444;
+}
