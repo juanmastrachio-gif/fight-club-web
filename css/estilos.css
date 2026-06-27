@@ -1,0 +1,306 @@
+
+/* base */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #cc3333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ff5555;
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+h2 {
+    border-bottom: 2px solid #cc3333;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+
+/* header y nav */
+header {
+    background-color: #111111;
+    padding: 15px 30px;
+    border-bottom: 3px solid #cc3333;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+    transition: color 0.2s;
+}
+
+header h1:hover {
+    color: #cc3333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #cccccc;
+    font-size: 0.95em;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-bottom-color 0.2s;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #cc3333;
+    border-bottom-color: #cc3333;
+    text-decoration: none;
+}
+
+
+/* contenido ppal */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+/* imagenes */
+img {
+    max-width: 100%;
+    border: 2px solid #333333;
+    transition: border-color 0.2s;
+}
+
+img:hover {
+    border-color: #cc3333;
+}
+
+.img-lado {
+    float: right;
+    margin: 0 0 15px 20px;
+    width: 280px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table td, table th {
+    border: 1px solid #2a2a2a;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #2a2a2a;
+    color: #cc3333;
+}
+
+table tr {
+    transition: background-color 0.15s;
+}
+
+table tr:hover td {
+    background-color: #252525;
+}
+
+
+/* asides */
+aside {
+    background-color: #222222;
+    border-left: 4px solid #cc3333;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: #cc3333;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+    color: #bbbbbb;
+}
+
+
+/* blockquote */
+blockquote {
+    border-left: 4px solid #cc3333;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #222222;
+    font-style: italic;
+    color: #cccccc;
+}
+
+
+/* footer */
+footer {
+    background-color: #111111;
+    border-top: 2px solid #333333;
+    text-align: center;
+    padding: 20px;
+    color: #888888;
+    font-size: 0.85em;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #888888;
+}
+
+footer a:hover {
+    color: #cc3333;
+}
+
+
+/* columnas */
+.columnas {
+    display: flex;
+    gap: 30px;
+}
+
+.columna {
+    flex: 1;
+}
+
+
+/* formulario */
+.form-grupo {
+    margin-bottom: 18px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cccccc;
+    font-size: 0.95em;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    background-color: #222222;
+    border: 1px solid #444444;
+    color: #ffffff;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: #cc3333;
+}
+
+.form-grupo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    background-color: #cc3333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #aa2222;
+}
+
+
+/* audio player */
+.audio-section {
+    background-color: #222222;
+    border-left: 4px solid #cc3333;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+
+.audio-section p {
+    margin-bottom: 10px;
+    color: #bbbbbb;
+}
+
+audio {
+    width: 100%;
+    margin-top: 8px;
+}
+
+
+/* pagina de error / confirmacion */
+.pagina-especial {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.pagina-especial h2 {
+    font-size: 2em;
+    border: none;
+}
+
+.pagina-especial p {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.btn-volver {
+    display: inline-block;
+    background-color: #cc3333;
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 1em;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+.btn-volver:hover {
+    background-color: #aa2222;
+    text-decoration: none;
+    color: #ffffff;
+}
